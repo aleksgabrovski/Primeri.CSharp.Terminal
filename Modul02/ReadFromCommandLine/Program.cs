@@ -15,7 +15,19 @@ namespace ReadFromCommandLine
 			b = Convert.ToInt32 ( Console.ReadLine() );
 
 			//Pechat na rezultata
-			Console.WriteLine ( "Резултата а + б е " + ( a + b ).ToString() + "\n\n\n" );
+			Console.WriteLine ( "Резултата а + б е " + ( a + b ).ToString() + "\n" );
+
+			string test = "1";
+			test += ", 2";
+			test += ", 3";
+			test += ", 4";
+			test += ", 5";
+
+			Console.WriteLine ("Subirane s += :" + test + "\n");
+
+			test = test.Replace (", ", ";");
+			Console.WriteLine ("Rabota s Replace: " + test + "\n");
+
 		}
 	}
 }
