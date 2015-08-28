@@ -15,6 +15,5 @@ namespace ReadFromCommandLine
 
 			// Pechat na rezlultat
 			Console.WriteLine (a + b);
-        }
-	}
+        }	}
 }

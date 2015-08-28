@@ -19,7 +19,7 @@ namespace ReadFromCommandLine
 
 			string test = "1";
 			test += ", 2";
-			test += ", 3";
+			test += ", 100";
 			test += ", 4";
 			test += ", 5";
 
@@ -28,6 +28,7 @@ namespace ReadFromCommandLine
 			test = test.Replace (", ", ";");
 			Console.WriteLine ("Rabota s Replace: " + test + "\n");
 
+			Console.WriteLine ("3ti znak :" + test.Split (';')[2] );
 		}
 	}
 }
