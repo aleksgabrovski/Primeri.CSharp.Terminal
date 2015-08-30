@@ -4,6 +4,8 @@ namespace TableProject
 {
 	class MainClass
 	{
+		enum ti {ime = 0, familiq, godini};
+
 		public static void Main (string[] args)
 		{
 
@@ -11,17 +13,21 @@ namespace TableProject
 			string[,] table = new string[2, 3];
 
 			//Въвеждане на първи ред
-			table[0, 0] = "Martin";table[0, 1] = "Simeonov";table[0, 2] = "31";
+			table[0, (int) ti.ime] = "Martin";table[0,(int) ti.familiq] = "Simeonov";table[0, (int)ti.godini] = "31";
 
 			//Въвеждане на втори ред
-			table[1, 0] = "Simeon";table[1, 1] = "Martinov";table[1, 2] = "41";
+			table[1,(int) ti.ime] = "Simeon";table[1,(int) ti.familiq] = "Martinov";table[1,(int) ti.godini] = "41";
 
 
 			//Pechat
 			Console.Write("Koi red iskate da vidite: ");
 			int _index = Convert.ToInt32 (Console.ReadLine ()) - 1;
 
-			Console.WriteLine ((table[_index,0])[0]+ ". " + table[_index,1] + ", " + table[_index,2] + "g.");
+			Console.WriteLine (
+					(table[_index,(int)ti.ime])[0]+ ". " + 
+				    table[_index,(int)ti.familiq] + ", " + 
+				    table[_index,(int)ti.godini] + "g."
+			);
 
 		}
 	}
