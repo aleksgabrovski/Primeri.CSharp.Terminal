@@ -28,7 +28,7 @@ namespace TableProject
 				    table[_index,(int)ti.familiq] + ", " + 
 				    table[_index,(int)ti.godini] + "g."
 			);
-
+			Console.ReadKey ();
 		}
 	}
 }
