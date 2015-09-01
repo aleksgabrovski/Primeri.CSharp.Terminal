@@ -18,13 +18,39 @@ namespace BoolExplore2
 			bool _check01 = int.TryParse ( _input, out _ui );	
 
 
-			_ui = (_ui <= _i.Length) ? _ui : 3;
-			_ui = (_ui > 0) ? _ui : 1;
+//			_ui = (_ui <= _i.Length) ? _ui : 3;
+//			_ui = (_ui > 0) ? _ui : 1;
 
-			if (_check01) {
+			switch (_ui) {
+			case 1:
+				{
+					Console.Write("1vi element ot masiva: ");
+					Console.WriteLine (_i [_ui - 1]);
+					break;
+				}
+			case 2:
+				{
+					Console.Write("2ri element ot masiva: ");
+					Console.WriteLine (_i [_ui - 1]);
+					break;
+				}
+			case 3:
+				{
+					Console.Write("3ti element ot masiva: ");
+					Console.WriteLine (_i [_ui - 1]);
+					break;
+				}
+			default:
+				{
+					Console.Write("V masiva nqma stoinost za tozi indeks\nOpitaite s indeks mejdu 1-3\n\n");
+					break;
+				}
 
-				Console.WriteLine (_i [_ui - 1]);
 			}
+//			if (_check01) {
+//
+//				Console.WriteLine (_i [_ui - 1]);
+//			}
 		}
 	}
 }
